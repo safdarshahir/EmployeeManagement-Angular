@@ -1,0 +1,61 @@
+<div class="container">
+    <h2 class="display-4 text-center">
+        Employee Management
+    </h2>
+    <hr>
+
+ 
+    <ul
+        class="nav nav-tabs mb-2"
+                role="tablist"
+                id="employeeTab">
+
+                <li class="nav-item"
+                    role="presentation">
+
+                    <a class="nav-link active"
+                        data-toggle="tab"
+                        id ="employeeTab-addEmployees"
+                        routerLinkActive="active"
+                        routerLink="/employeeTab-addEmployees"
+                        role="tab"
+                        aria-controls="employeeTab-addEmployees"
+                        aria-selected="true">
+                        Add Employee
+                    </a>
+                </li>
+                <li class="nav-item"
+                    role="presentation">
+
+                    <a class="nav-link"
+                        data-toggle="tab"
+                        id = "employeeTab-listEmployees"
+                        routerLinkActive="active"
+                        routerLink="/employeeTab-listEmployees"
+                        role="tab"
+                        aria-controls="employeeTab-listEmployees"
+                        aria-selected="false">
+                        List Employee
+                    </a>
+                </li>
+            </ul>
+
+        <div class="employeeTab-content">
+            <div class="tab-pane fade show active" 
+                 id="employeeTab-addEmployee"
+                 role="tabpanel"   
+                 aria-labelledby="employeeTab-addEmployee">
+                <app-employees></app-employees>
+            </div>
+            &nbsp;
+            &nbsp;
+            <hr>
+            <div class="tab-pane fade show active" 
+            id="employeeTab-listEmployee"
+            role="tabpanel"   
+            aria-labelledby="employeeTab-listEmployee">
+                <app-employee-list></app-employee-list>
+            </div>
+        </div>
+      
+</div>
